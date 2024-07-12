@@ -7,9 +7,27 @@ import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const url = process.env.DEPLOYMENT_URL;
+
+
+
 export const metadata: Metadata = {
   title: "PromptHub",
   description: "Get all the prompts which are used by people in vercel v0",
+  openGraph: {
+      type: "website",
+       url: url,
+       title: "PromptHub",
+       description: "Get all the prompts which are used by people in vercel v0",
+       siteName: "Get all the prompts which are used by people in vercel v0",
+       images: [{
+         url: `${url}/meta/meta_shot.webp`,
+         secureUrl: `${url}/meta/meta_shot.webp`,
+         width: 1200,
+         height: 627,
+         alt: 'Get all the prompts which are used by people in vercel v0'
+       }],
+     }
 };
 
 export default function RootLayout({
