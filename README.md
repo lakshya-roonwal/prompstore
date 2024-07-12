@@ -27,7 +27,7 @@ This project is a search engine built to scrape, store, and search for prompts f
 1. **Clone the repository:**
     
     ```bash
-    git clone https://github.com/lakshyaroonwal/prompthub.git
+    git clone https://github.com/lakshya-roonwal/prompthub.git
     cd prompthub
     ```
     
