@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import {  LucideGithub } from "lucide-react";
 import Link from "next/link";
@@ -26,6 +27,7 @@ export default function RootLayout({
           <LucideGithub />
           </Link>
         </div>
+        <Analytics />
         </body>
     </html>
   );
