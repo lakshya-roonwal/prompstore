@@ -81,18 +81,21 @@ const PromptSearcher = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              className="flex items-center gap-8 bg-card p-4 rounded-md hover:bg-card/80 transition-colors"
+              className="flex flex-col lg:flex-row items-start  lg:items-center gap-8 bg-card p-4 rounded-md hover:bg-card/80 transition-colors"
             >
               <div className="flex-1">
                 <h3 className="text-lg font-medium text-foreground">{prompt.prompt}</h3>
               </div>
+              <div>
+
               <Button
                 onClick={() => handleCopy(prompt.prompt, prompt._id)}
                 className="bg-secondary text-secondary-foreground rounded-md px-4 py-2 font-medium hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"
-              >
+                >
                 {copyId === prompt._id ? "Copied" : "Copy"}
               </Button>
               <Link target="_blank" href={prompt.link} className={buttonVariants()}>View</Link>
+                </div>
             </motion.div>
           ))}
         </div>
