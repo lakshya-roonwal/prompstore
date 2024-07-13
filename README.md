@@ -36,6 +36,12 @@ This project is a search engine built to scrape, store, and search for prompts f
     ```bash
     pnpm install
     ```
+
+3. **Run the code:**
+    
+    ```bash
+    pnpm dev
+    ```
 ### Configuration
 
 1. **Environment Variables:**
@@ -45,7 +51,8 @@ This project is a search engine built to scrape, store, and search for prompts f
     ```
     MONGO_URL=your_database_url
     ```
-
+2. **Add sample data to your Mongodb:**
+In your mongodb database add the  ```sampledata.json``` to __database__ :: v0_prompts and __collection__ : prompts
 
 ## Usage
 
