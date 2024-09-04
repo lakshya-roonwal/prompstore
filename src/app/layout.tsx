@@ -12,7 +12,7 @@ const url = process.env.DEPLOYMENT_URL;
 
 
 export const metadata: Metadata = {
-  title: "PromptHub",
+  title: "PromptStore",
   description: "Get all the prompts which are used by people in vercel v0",
   openGraph: {
       type: "website",
