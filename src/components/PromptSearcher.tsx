@@ -52,7 +52,7 @@ const PromptSearcher = () => {
         className="absolute inset-0 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] -z-20"
       ></div>
       <div className="max-w-4xl w-full px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl my-4 font-bold tracking-tight">PromptHub</h1>
+        <h1 className="text-3xl my-4 font-bold tracking-tight">PromptStore</h1>
         <form className="flex items-center gap-2 mb-8">
           <Input
             type="search"
